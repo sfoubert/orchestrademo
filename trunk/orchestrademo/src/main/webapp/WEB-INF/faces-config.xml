@@ -1,0 +1,32 @@
+<!DOCTYPE faces-config PUBLIC "-//Sun Microsystems, Inc.//DTD JavaServer Faces Config 1.0//EN" "http://java.sun.com/dtd/web-facesconfig_1_0.dtd">
+<faces-config>
+
+	<application>
+		<!-- Warning : the last resource bundle must contain the error messages -->
+		<message-bundle>com.globecast.web.hms.action.bundle.ResourcesHms</message-bundle>
+        <variable-resolver>org.springframework.web.jsf.DelegatingVariableResolver</variable-resolver>
+		<locale-config>
+			<default-locale>fr</default-locale>
+			<supported-locale>en_US</supported-locale>
+			<supported-locale>en</supported-locale>
+			<supported-locale>fr</supported-locale>
+		</locale-config>
+	</application>
+
+	<!-- managed-bean>
+		<managed-bean-name>sessionBean</managed-bean-name>
+		<managed-bean-class>fr.ippon.orchestrademo.bean.SessionBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean-->
+
+	<navigation-rule>
+
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>homeAction</from-outcome>
+			<to-view-id>/index.jsf</to-view-id>
+		</navigation-case>
+
+	</navigation-rule>
+
+</faces-config>
