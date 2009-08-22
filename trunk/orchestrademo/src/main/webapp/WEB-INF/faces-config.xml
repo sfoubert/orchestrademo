@@ -26,7 +26,14 @@
 			<from-outcome>homeAction</from-outcome>
 			<to-view-id>/index.jsf</to-view-id>
 		</navigation-case>
-
+		<navigation-case>
+			<from-outcome>showList</from-outcome>
+			<to-view-id>/list.jsf</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>addUser</from-outcome>
+			<to-view-id>/addUser.jsf</to-view-id>
+		</navigation-case>
 	</navigation-rule>
 
 </faces-config>
